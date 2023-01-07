@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Pseudo Classes Part 2</title>
+</head>
+
+<body>
+         <h1>Pseudo Classes Part 2</h1>
+         <div>
+                  <p>Welcome to the World.</p>
+                  <p id="lorem34">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam asperiores autem
+                           aperiam veritatis debitis voluptas numquam blanditiis iure molestias dolore, iusto incidunt
+                           ducimus necessitatibus nisi sed, cupiditate aliquam vel cum rem voluptate impedit?</p>
+         </div>
+         <p>This paragraph is the first child of its parent (body).</p>
+         <p>This paragraph is not the first child of its parent (body).</p>
+
+         <div>
+                  <p>This paragraph is the first child of its parent (div).</p>
+                  <p>This paragraph is not the first child of its parent (div).</p>
+         </div>
+
+         <div>
+                  <p>This paragraph is the first child of its parent (div).</p>
+                  <p>This paragraph is not the first child of its parent (div).</p>
+         </div>
+         <input type="text" id="p1Focus">
+         <input type="text">
+
+
+         <style>
+                  p:first-child {
+                           background-color: yellow;
+                           color: green;
+                  }
+
+                  #p1Focus:focus {
+                           background-color: aqua;
+                  }
+
+                  #lorem34::first-letter {
+                           background-color: blueviolet;
+                  }
+
+                  #lorem34::first-line {
+                           background-color: chartreuse;
+                  }
+
+                  #lorem34::before{
+                           content: "Hi ";
+                           background-color: gold;
+                          
+                  }
+                  #lorem34::after{
+                           content: "finish ";
+                           background-color: gold;
+                          
+                  }
+         </style>
+</body>
+
+</html>
